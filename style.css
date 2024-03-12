@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dosis&family=Permanent+Marker&family=Philosopher&family=Pixelify+Sans&family=Rajdhani&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(167, 167, 167);
+    color: white;
+    display: flex;
+    height: 50px;   
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 0 5px;
+    margin: 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 40px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+nav ul li a:hover{
+    color: blueviolet;
+}
+
+nav ul li img{
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.gameContainer{
+    /* background-color: rgb(96, 255, 255); */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.box{
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 8vw;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(237, 190, 255);
+    color: rgb(60, 0, 102);
+}
+
+.info{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.gameInfo{
+    padding: 0px 30px;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin: 0 20px;
+    padding: 5px 10px;
+    background-color:  rgb(237, 190, 255);
+    color: rgb(171, 0, 0);
+    border: 2px solid rgb(60, 0, 102);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+}
+
+.line{
+    background-color: red;
+    width: 0vw;
+    height: 2px;
+    position: absolute;
+    transition: width 1.2s ease-in-out;
+}    
